@@ -1,22 +1,21 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from './footer'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen bg-cover"
+      style={{
+        backgroundImage:
+          'url("https://images.unsplash.com/photo-1530639834082-05bafb67fbbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NDIzOTcyMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080")',
+      }}>
       <Head>
         <title>Serverless Builders</title>
         <meta name="description" content="Serverless Builders Community" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main
-        className="min-h-screen bg-cover bg-top sm:bg-top "
-        style={{
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1530639834082-05bafb67fbbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NDIzOTcyMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080")',
-        }}
-      >
+      <main>
         <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
           <h1 className="mt-2 text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
             Serverless Builders
@@ -40,6 +39,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   )
 }
