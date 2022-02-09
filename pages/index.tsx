@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from './header'
 import Footer from './footer'
 
 const Home: NextPage = () => {
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Serverless Builders Community" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header></Header>
       <main>
         <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
           <h1 className="mt-2 text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
