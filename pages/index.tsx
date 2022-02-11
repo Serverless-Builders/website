@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Serverless Builders</title>
         <meta name="description" content="Serverless Builders Community" />
+        <meta name="monetization" content="$ilp.uphold.com/AgPjfp2LW4Db"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
